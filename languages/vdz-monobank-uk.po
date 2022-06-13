@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VDZ Monobank\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-30 15:34+0000\n"
+"PO-Revision-Date: 2021-09-30 15:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1\n"
+"X-Domain: vdz-monobank"
+
+#: vdz-monobank.php:269
+msgid "Buy"
+msgstr "Покупка"
+
+#: vdz-monobank.php:265 vdz-monobank.php:347
+msgid "Currencies"
+msgstr "Валюти"
+
+#: vdz-monobank.php:348
+msgid "Example:"
+msgstr "Наприклад:"
+
+#. URI of the plugin
+msgid "http://online-services.org.ua"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://online-services.org.ua#vdz-monobank"
+msgstr ""
+
+#: vdz-monobank.php:86
+msgid "Monobank exchange rate"
+msgstr "Monobank - Обмінний курс "
+
+#: vdz-monobank.php:270
+msgid "Sell"
+msgstr "Продаж"
+
+#. Author of the plugin
+msgid "VadimZ"
+msgstr ""
+
+#. Name of the plugin
+msgid "VDZ Monobank"
+msgstr ""
+
+#. Description of the plugin
+msgid "VDZ Monobank exchange rates & links"
+msgstr ""
