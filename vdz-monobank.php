@@ -70,7 +70,10 @@ add_action(
 			} else {
 				$msg .= "Thanks for your time with us! ({$plugin_name}) Have a nice day!";
 			}
-			wp_add_inline_script( $handle, "document.getElementById('deactivate-" . esc_attr( $plugin_dir_name ) . "').onclick=function (e){alert('" . esc_attr( $msg ) . "');}" );
+
+			if(substr_count( $_SERVER['REQUEST_URI'], 'plugins.php')){
+				wp_add_inline_script( $handle, "document.getElementById('deactivate-".esc_attr($plugin_dir_name)."').onclick=function (e){alert('".esc_attr( $msg )."');}" );
+			}
 		}
 	}
 );
@@ -121,6 +124,9 @@ function vdz_monobank_get_exchange_rate() {
 function vdz_monobank_get_exchange_rate_by_iso_numeric_code_in_key( $iso_numeric_code ) {
 	$iso_numeric_code = (int) $iso_numeric_code;
 	$all_data         = vdz_monobank_get_exchange_rate();
+    if(($all_data instanceof stdClass) && isset( $all_data->errorDescription)){
+        return false;
+    }
 	return isset( $all_data[ $iso_numeric_code ] ) ? $all_data[ $iso_numeric_code ] : false;
 }
 function vdz_monobank_get_all_currency_data() {
